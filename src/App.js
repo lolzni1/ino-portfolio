@@ -83,8 +83,8 @@ function App() {
             version, chekout please. If you're interested in working with me,
             don't hesitate to reach out.
           </p>
-          <div className="cvBackground">
-            <p> Download CV </p>
+          <div className="cvBackground" onClick={()=> window.open('https://my.indeed.com/p/gantumurs-m6d2vhq')}>
+            <p> Click to see CV </p>
           </div>
         </div>
         <div className="skillSection" >
