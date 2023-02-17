@@ -1,24 +1,111 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import {
+  manImg,
+  scrollDownMouse,
+  logo,
+  vectorBack,
+  vectorGreen,
+  profile,
+  textBackground,
+  instagramIcon,
+  twitterIcon,
+  skyIcon,
+  linkedinIcon,
+} from "./assets";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <>
+      <div className="topNav">
+        <img alt="logo" className="logo" src={logo} />
+        <p className="icon">
+          <i className="fa fa-bars"></i>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div className="navBar">
+          <p >Home</p>
+          <p onClick={()=> window.scrollTo(0, 800)}>About me</p>
+          <p onClick={()=> window.scrollTo(0, 1580)}>Skills</p>
+        </div>
+      </div>
+      <div className="greetingSection">
+        <img className="manImg" alt="manImg" src={manImg} />
+        <div className="icons">
+          <img
+            alt="skyIcon"
+            className="iconItem"
+            src={skyIcon}
+            onClick={() =>
+              window.open("https://join.skype.com/invite/r7tSRlW8D7QT")
+            }
+          />
+          <img
+            alt="instagramIcon"
+            className="iconItem"
+            src={instagramIcon}
+            onClick={() => window.open("https://www.instagram.com/inori___k")}
+          />
+          <img alt="twitterIcon" className="iconItem" src={twitterIcon} />
+
+          <img alt="linkedinIcon" className="iconItem" src={linkedinIcon} />
+        </div>
+        <p className="welcome">Welcome to my portfolio</p>
+        <p className="hi">Hi! I'm front-end </p>
+        <p className="webdev">web developer</p>
+        <div
+          className="contactMe"
+          onClick={() => window.open("https://qrco.de/bdiLNc")}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <p>CONTACT ME</p>
+        </div>
+        <img
+          className="scrollDownMouse"
+          alt="scrollDownMouse"
+          src={scrollDownMouse}
+        />
+        <div className="aboutMeSection" id="aboutmeSection">
+          <p className="aboutMe">About Me</p>
+          <img alt="profile" className="profile" src={profile} />
+          <img alt="vectorBack" className="vectorBack" src={vectorBack} />
+          <img alt="vectorGreen" className="vectorGreen" src={vectorGreen} />
+          <p className="ino">
+            Hi, I'm Gantumur {"<You can call me Ino/>"}, a front-end web
+            developer with two years of experience creating dynamic and engaging
+            websites. I am skilled in HTML, CSS, JavaScript, and various
+            frameworks such as React and MUI. Btw, this page has the mobile
+            version, chekout please. If you're interested in working with me,
+            don't hesitate to reach out.
+          </p>
+
+          <div className="cvBackground">
+            <p> Download CV </p>
+          </div>
+        </div>
+        <div className="skillSection">
+          <img
+            alt="textBackground"
+            className="textBackground"
+            src={textBackground}
+          />
+          <p className="title">Skills</p>
+          <div className="skills">
+            <ul className="coreSkills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>REACT</li>
+            </ul>
+            <ul className="otherSkills">
+              <li>RestAPI</li>
+              <li>MUI</li>
+              <li>Golang</li>
+              <li>Hooks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 

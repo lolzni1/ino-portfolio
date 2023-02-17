@@ -1,0 +1,11 @@
+export const logo = require('./logoblack.png');
+export const manImg = require('./manImg.png');
+export const scrollDownMouse = require('./scrollDownMouse.png');
+export const vectorBack = require('./vectorBack.png');
+export const vectorGreen = require('./vectorGreen.png');
+export const profile = require('./profile.jpg') 
+export const textBackground = require('./textBackground.png')
+export const instagramIcon = require('./instagramIcon.png')
+export const linkedinIcon = require('./linkedinIcon.png')
+export const skyIcon = require('./skyIcon.png')
+export const twitterIcon = require('./twitterIcon.png')

@@ -1,38 +1,523 @@
-.App {
-  text-align: center;
+.logo {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 18px;
+  top: 5px;
+}
+.icon {
+  position: absolute;
+  width: 16px;
+  height: 1px;
+  left: 376px;
+  top: 34px;
+}
+.icons {
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.greetingSection {
+  margin: 0;
+}
+.greetingSection .welcome {
+  position: absolute;
+  width: 179.54px;
+  height: 29.18px;
+  left: 25.9px;
+  top: 115px;
+
+  font-family: "Hannari";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.2258px;
+  line-height: 23px;
+
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.greetingSection .hi {
+  position: absolute;
+  width: 370.49px;
+  left: 24px;
+  top: 136.57px;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30.4516px;
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.greetingSection .webdev {
+  position: absolute;
+  width: 370.49px;
+  left: 24px;
+  top: 176.57px;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30.4516px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.greetingSection .manImg {
+  position: absolute;
+  width: 236px;
+  height: 231.91px;
+  left: 168px;
+  top: 137px;
+}
+
+.greetingSection .contactMe {
+  position: absolute;
+  width: 54px;
+  height: 17px;
+  left: 24px;
+  top: 278px;
+
+  background: #d9d9d9;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.contactMe p {
+  margin: 5px 0 5px 6px;
+
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 6.66667px;
+  line-height: 8px;
+}
+
+.scrollDownMouse {
+  position: absolute;
+  width: 143px;
+  height: 112px;
+  left: 143px;
+  top: 399px;
+}
+
+.aboutMe {
+  position: absolute;
+  width: 120px;
+  height: 25.65px;
+  left: 154px;
+  top: 498px;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.2258px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.vectorBack {
+  position: absolute;
+  width: 78.31px;
+  height: 85.98px;
+  left: 38.26px;
+  top: 580.41px;
+}
+
+.vectorGreen {
+  position: absolute;
+  width: 93.09px;
+  height: 91px;
+  left: 26px;
+  top: 579px;
+}
+
+.profile {
+  position: absolute;
+  width: 62.86px;
+  height: 69.92px;
+  left: 44.08px;
+  top: 591.47px;
+}
+
+.ino {
+  position: absolute;
+  width: 234.13px;
+  height: 91px;
+  left: 158px;
+  top: 573px;
+
+  /* Text */
+
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.15184px;
+  line-height: 147.5%;
+  /* or 13px */
+
+  color: #000000;
+}
+.cvBackground {
+  position: absolute;
+  width: 51.51px;
+  height: 15.77px;
+  left: 214px;
+  top: 678px;
+  background: linear-gradient(
+    180deg,
+    #05e0c6 0%,
+    rgba(82, 101, 137, 0.64) 100%
+  );
+  border-radius: 2.8911px;
+}
+
+.cvBackground p {
+  position: absolute;
+  width: 31px;
+  height: 6px;
+  left: 10.78px;
+  bottom: 0px;
+
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.73089px;
+  line-height: 6px;
+  /* identical to box height */
+
+  color: #ffff;
+}
+
+.skillSection {
+  position: absolute;
+  width: 376px;
+  height: 195.03px;
+  left: 15px;
+  top: 757px;
+  background: #141414;
+  border-radius: 17.704px;
+}
+
+.skillSection p {
+  width: 35.41px;
+  height: 13.49px;
+  margin-left: 160.76px;
+
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.4888px;
+  line-height: 17px;
+
+  color: #ffffff;
+}
+
+.skillSection .textBackground {
+  position: absolute;
+  width: 358.6px;
+  height: 91.33px;
+  left: 10.68px;
+  top: 41px;
+}
+
+.skillSection .coreSkills {
+  list-style-type: none;
+  position: absolute;
+  width: 36.53px;
+  height: 7.03px;
+  left: 70.87px;
+  top: 45px;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6.74439px;
+  line-height: 17px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.skillSection .otherSkills {
+  list-style-type: none;
+  position: absolute;
+  width: 36.53px;
+  height: 7.03px;
+  left: 265.87px;
+  top: 45px;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6.74439px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 555px) {
+  .logo {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 58px;
+    top: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .icon {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .icons {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    width: 78px;
+    height: 85.19px;
+    left: 1123px;
+    top: 65.43px;
+  }
+  .iconItem {
+    margin-left: 30px;
+  }
+
+  .navBar {
+    position: absolute;
+    left: 780px;
+    top: 95px;
+
+    justify-content: space-between;
+    display: flex;
+    /* identical to box height */
+
+    color: #000000;
+  }
+  .navBar :hover {
+    cursor: pointer;
+  }
+  .navBar p {
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 45px 0 0;
+  }
+
+  .greetingSection .welcome {
+    position: absolute;
+    width: 283px;
+    height: 46px;
+    left: 355px;
+    top: 370px;
+    font-family: "Hannari";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+  }
+  .greetingSection .hi {
+    position: absolute;
+    width: 584px;
+    height: 152px;
+    left: 352px;
+    top: 404px;
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #000000;
+  }
+  .greetingSection .webdev {
+    position: absolute;
+    width: 584px;
+    height: 152px;
+    left: 352px;
+    top: 464px;
+
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #000000;
+  }
+  .greetingSection .manImg {
+    position: absolute;
+    width: 750px;
+    height: 737px;
+    left: 1135px;
+    top: 15px;
+  }
+  .greetingSection .contactMe {
+    position: absolute;
+    width: 196px;
+    height: 60px;
+    left: 688px;
+    top: 1612px;
+
+    background: #d9d9d9;
+    border-radius: 19px;
+  }
+  .contactMe :hover {
+    cursor: pointer;
+  }
+
+  .contactMe p {
+    position: absolute;
+    width: 115px;
+    height: 27px;
+    left: 40px;
+    bottom: 10px;
+
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.5405px;
+    line-height: 21px;
+
+    color: #000000;
+  }
+  .scrollDownMouse {
+    position: absolute;
+    width: 143px;
+    height: 112px;
+    left: 827px;
+    top: 843px;
+  }
+  .aboutMe {
+    position: absolute;
+    width: 248px;
+    height: 53px;
+    left: 775px;
+    top: 1144px;
+
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #000000;
+  }
+  .vectorBack {
+    position: absolute;
+    width: 388px;
+    height: 426px;
+    left: 209.73px;
+    top: 1255px;
+  }
+  .vectorGreen {
+    position: absolute;
+    width: 461.23px;
+    height: 450.88px;
+    left: 149px;
+    top: 1248px;
+  }
+  .profile {
+    position: absolute;
+    width: 361px;
+    height: 396px;
+    left: 221.73px;
+    top: 1258px;
+  }
+  .ino {
+    position: absolute;
+    width: 955px;
+    height: 175px;
+    left: 687.73px;
+    top: 1376px;
+
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 147.5%;
+    /* or 35px */
+
+    color: #000000;
+  }
+  .cvBackground {
+    position: absolute;
+    width: 196px;
+    height: 60px;
+    left: 912px;
+    top: 1612px;
+
+    background: linear-gradient(
+      180deg,
+      #05e0c6 0%,
+      rgba(82, 101, 137, 0.64) 100%
+    );
+    border-radius: 11px;
+  }
+  .cvBackground :hover {
+    cursor: pointer;
+  }
+
+  .cvBackground p {
+    position: absolute;
+    width: 118px;
+    height: 23px;
+    left: 40px;
+
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: black;
+  }
+  .skillSection {
+    position: absolute;
+    width: 1338px;
+    height: 694px;
+    left: 187px;
+    top: 1820px;
+
+    background: #141414;
+    border-radius: 63px;
+  }
+  .skillSection p {
+    position: absolute;
+    width: 126px;
+    height: 48px;
+    left: 450px;
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #ffffff;
+  }
+  .skillSection .textBackground {
+    position: absolute;
+    width: 1276.07px;
+    height: 325px;
+    left: 0px;
+    top: 130px;
+  }
+  .skillSection .coreSkills {
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    left: 344px;
+    top: 128px;
+  }
+  .skillSection .otherSkills {
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    left: 1035px;
+    top: 128px;
+    color: #ffffff;
   }
 }
