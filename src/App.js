@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import "./App.css";
 
 import {
@@ -11,11 +12,14 @@ import {
   instagramIcon,
   twitterIcon,
   skyIcon,
-  linkedinIcon,
+  gitHubLogo,
 } from "./assets";
 
 function App() {
-
+  const ref = useRef(null);
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'})
+  }
   return (
     <>
       <div className="topNav">
@@ -24,14 +28,15 @@ function App() {
           <i className="fa fa-bars"></i>
         </p>
         <div className="navBar">
-          <p >Home</p>
-          <p onClick={()=> window.scrollTo(0, 800)}>About me</p>
-          <p onClick={()=> window.scrollTo(0, 1580)}>Skills</p>
+          <p>Home</p>
+          <p onClick={handleClick}>About me</p>
+          <p onClick={() => window.scrollTo(0, 1580)}>Skills</p>
         </div>
       </div>
       <div className="greetingSection">
         <img className="manImg" alt="manImg" src={manImg} />
         <div className="icons">
+     
           <img
             alt="skyIcon"
             className="iconItem"
@@ -47,8 +52,9 @@ function App() {
             onClick={() => window.open("https://www.instagram.com/inori___k")}
           />
           <img alt="twitterIcon" className="iconItem" src={twitterIcon} />
-
-          <img alt="linkedinIcon" className="iconItem" src={linkedinIcon} />
+          <img alt="linkedinIcon" className="iconItem" src={gitHubLogo} onClick={()=> {
+            window.open("https://github.com/lolzni1")
+          }}/>
         </div>
         <p className="welcome">Welcome to my portfolio</p>
         <p className="hi">Hi! I'm front-end </p>
@@ -64,8 +70,8 @@ function App() {
           alt="scrollDownMouse"
           src={scrollDownMouse}
         />
-        <div className="aboutMeSection" id="aboutmeSection">
-          <p className="aboutMe">About Me</p>
+        <div className="aboutMeSection" id="aboutmeSection" >
+          <p className="aboutMe" ref={ref}>About Me</p>
           <img alt="profile" className="profile" src={profile} />
           <img alt="vectorBack" className="vectorBack" src={vectorBack} />
           <img alt="vectorGreen" className="vectorGreen" src={vectorGreen} />
@@ -77,12 +83,11 @@ function App() {
             version, chekout please. If you're interested in working with me,
             don't hesitate to reach out.
           </p>
-
           <div className="cvBackground">
             <p> Download CV </p>
           </div>
         </div>
-        <div className="skillSection">
+        <div className="skillSection" >
           <img
             alt="textBackground"
             className="textBackground"
